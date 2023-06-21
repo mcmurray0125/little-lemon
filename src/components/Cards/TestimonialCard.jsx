@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card"
 
 export default function TestimonialCard({ testimonial }) {
   return (
-    <Card className="testimonial-card mb-5">
+    <Card className="testimonial-card">
         <Card.Body>
             <div className="user-info" style={{fontSize: "12px"}}>
                 <div className="user-img-wrapper">

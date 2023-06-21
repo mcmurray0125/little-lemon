@@ -10,7 +10,7 @@ export default function Testimonials() {
             <div className='testimonials-heading px-5 mb-5'>
                 <h1 className='text-center text-white'>Testimonials</h1>
             </div>
-            <section className='testimonials-wrapper'>
+            <section className='testimonials-wrapper mb-5'>
                 {testimonials.map((testimonial, index) => {
                     return (
                         <TestimonialCard key={index} testimonial={testimonial}/>

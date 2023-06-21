@@ -110,7 +110,12 @@ header p,
   background-color: var(--light-grey) !important;
   border: none !important;
   border-radius: 1rem !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   overflow: hidden;
+  transition: 0.15s;
+}
+.specials-card:hover {
+  transform: scale(1.03) !important;
 }
 .special-price {
   color: var(--price-color);
@@ -154,7 +159,13 @@ header p,
 .testimonial-card {
   height: 178px !important;
   width: 186px;
+  border: none !important;
   border-radius: 16px !important;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  transition: 0.15s;
+}
+.testimonial-card:hover {
+  transform: scale(1.03) !important;
 }
 .testimonial-card .card-body {
   display: flex;
@@ -180,12 +191,82 @@ header p,
   color: var(--slate-main);
 }
 
+/* ABOUT US */
+#about-us {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 50dvh;
+  height: auto;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+.about-text h1,
+.about-text h3 {
+  color: var(--dark-grey);
+}
+.about-images {
+  position: relative;
+  width: 100%;
+}
+
+.image-wrapper {
+  max-height: 400px;
+}
+
+#about-image1,
+#about-image2 {
+  width: 250px;
+  height: 320px;
+  position: absolute;
+}
+
+#about-image1 {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
+
+#about-image2 {
+  top: 35%;
+  right: 30%;
+  transform: translate(50%, -50%);
+  z-index: 2;
+}
+
 /* FOOTER */
 footer li a {
   text-decoration: none;
   color: var(--dark-grey);
 }
 
+@media screen and (max-width: 650px) {
+  #about-us {
+    flex-direction: column;
+    height: auto !important;
+  }
+  .about-text {
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .about-images {
+    height: 350px;
+  }
+  #about-image1 {
+    right: 60%;
+  }
+  #about-image2 {
+    right: 40%;
+  }
+  footer img {
+    margin-bottom: 1rem;
+  }
+}
 @media screen and (max-width: 767px) {
   header {
     height: auto;
@@ -199,6 +280,13 @@ footer li a {
   }
   header .container {
     flex-direction: column;
+  }
+  .testimonials-wrapper {
+    flex-direction: column;
+  }
+  .testimonial-card {
+    height: unset !important;
+    width: 350px;
   }
 }
 @media screen and (max-width: 992px) {
