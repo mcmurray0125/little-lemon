@@ -5,7 +5,7 @@ import SpecialCard from './SpecialCard'
 
 export default function Specials() {
   return (
-    <Container className='specials-container d-flex flex-column justify-content-center'>
+    <Container className='specials-container d-flex flex-column justify-content-center py-5'>
         <div className='specials-heading px-5 mb-5'>
             <h1>Specials</h1>
             <Button>Online Menu</Button>

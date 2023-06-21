@@ -104,12 +104,12 @@ header p,
 .special-price {
   color: var(--price-color);
 }
-.card-header {
+.specials-card .card-header {
   width: 265px;
   height: 185px;
   padding: 0 !important;
 }
-.card-img {
+.specials-card .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -122,6 +122,49 @@ header p,
   height: 60px;
   width: 200px;
 }
+/* TESTIMONIALS */
+#testimonials {
+  background-color: var(--slate-main);
+}
+.testimonials-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.testimonials-heading h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 48px;
+}
+.testimonial-card {
+  height: 178px !important;
+  width: 186px;
+  border-radius: 16px !important;
+}
+.testimonial-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-info {
+  display: flex;
+  gap: 0.5rem;
+}
+.user-img-wrapper {
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  border-radius: 16px !important;
+}
+.user-img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.review-text {
+  color: var(--slate-main);
+}
+
 @media screen and (max-width: 767px) {
   header {
     height: auto;

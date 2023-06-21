@@ -2,20 +2,19 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import footerLogo from "../assets/footer-logo.png"
 
 export default function Footer() {
   return (
     <footer className="bg-light text-center">
       <Container className='py-4'>
         <Row>
-          <Col sm={3}>
-            <div>
+          <Col sm={3} className='d-flex align-items-center'>
               <img
-                src="path_to_your_image.png"
-                alt="Vertical Image"
+                src={footerLogo}
+                alt="Footer image"
                 style={{ height: '150px' }}
               />
-            </div>
           </Col>
           <Col sm={3}>
             <div className='text-start'>
