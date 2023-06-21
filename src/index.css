@@ -1,0 +1,16 @@
+:root {
+  --yellow-main: #f4ce14;
+  --slate-main: #495e57;
+  --price-color: #ee9972;
+  --light-grey: #edefee;
+}
+
+body {
+  font-family: "Karla", sans-serif !important;
+}
+.navbar {
+  height: 100px !important;
+}
+.nav-link {
+  color: black !important;
+}
