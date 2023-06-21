@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from "react-bootstrap/Container"
 import testimonials from "../testimonialsData"
-import TestimonialCard from './TestimonialCard'
+import TestimonialCard from './Cards/TestimonialCard'
 
 export default function Testimonials() {
   return (

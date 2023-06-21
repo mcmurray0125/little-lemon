@@ -3,6 +3,7 @@
   --slate-main: #495e57;
   --price-color: #ee9972;
   --light-grey: #edefee;
+  --dark-grey: #333333;
 }
 
 body {
@@ -17,7 +18,14 @@ body {
 }
 .nav-link {
   color: black !important;
+  font-weight: 500 !important;
+  border-bottom: 1px solid white !important;
+  transition: 0.2s;
 }
+.nav-link:hover {
+  border-bottom: 1px solid var(--slate-main) !important;
+}
+
 /* HEADER */
 header {
   height: 345px;
@@ -73,6 +81,9 @@ header p,
   border-radius: 1rem !important;
   width: 200px;
 }
+.reserve-btn:hover {
+  background-color: var(--price-color) !important;
+}
 .reserve-btn a {
   color: black !important;
   font-weight: 500 !important;
@@ -121,6 +132,10 @@ header p,
   font-weight: 500 !important;
   height: 60px;
   width: 200px;
+  transition: 0.15s;
+}
+.specials-heading button:hover {
+  background-color: var(--price-color) !important;
 }
 /* TESTIMONIALS */
 #testimonials {
@@ -163,6 +178,12 @@ header p,
 }
 .review-text {
   color: var(--slate-main);
+}
+
+/* FOOTER */
+footer li a {
+  text-decoration: none;
+  color: var(--dark-grey);
 }
 
 @media screen and (max-width: 767px) {

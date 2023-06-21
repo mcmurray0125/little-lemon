@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Button } from 'react-bootstrap'
 import specials from "../specialsData"
-import SpecialCard from './SpecialCard'
+import SpecialCard from './Cards/SpecialCard'
 
 export default function Specials() {
   return (
@@ -10,7 +10,7 @@ export default function Specials() {
             <h1>Specials</h1>
             <Button>Online Menu</Button>
         </div>
-        <section className='specials-wrapper'>
+        <section className='specials-wrapper pb-5'>
             {specials.map((special, index) => {
                 return (
                     <SpecialCard key={index} special={special}/>
