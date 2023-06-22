@@ -13,7 +13,7 @@ export default function SpecialCard( { special } ) {
             <h5 className="special-price">${special.price}</h5>
           </div>
           <p>{special.description}</p>
-          <a className="fw-bold text-decoration-none" style={{color: "var(--dark-grey)"}} href="/">Order a Delivery <i className="fa-solid fa-bicycle"></i></a>
+          <a className="fw-bold text-decoration-none" style={{color: "var(--dark-grey)"}} href="#">Order a Delivery <i className="fa-solid fa-bicycle"></i></a>
         </Card.Body>
     </Card>
   )

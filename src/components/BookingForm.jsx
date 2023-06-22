@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 
-export default function BookingForm({ availableTimes, updateTimes, dispatchOnDateChange }) {
+export default function BookingForm({ availableTimes, submitData, dispatchOnDateChange }) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('17:00');
   const [guests, setGuests] = useState(1);
@@ -12,16 +12,16 @@ export default function BookingForm({ availableTimes, updateTimes, dispatchOnDat
     dispatchOnDateChange(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleFormSubmit = e => {
     e.preventDefault();
-    // Handle form submission logic here
+    submitData({ date, time, guests, occasion, });
   };
 
   return (
     <section id='booking'>
         <Container className='booking-container p-5'>
             <h1>Reserve Your Seat</h1>
-            <Form style={{ display: 'grid', width: '300px', gap: '10px' }} onSubmit={handleSubmit}>
+            <Form style={{ display: 'grid', width: '300px', gap: '10px' }} onSubmit={handleFormSubmit}>
                 <Form.Label htmlFor="res-date">Choose date</Form.Label>
                 <Form.Control
                     type="date"

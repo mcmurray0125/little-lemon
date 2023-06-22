@@ -24,19 +24,19 @@ export default function Footer() {
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/">About</a>
+                  <a href="#about-us">About</a>
                 </li>
                 <li>
-                  <a href="/">Menu</a>
+                  <a href="#">Menu</a>
                 </li>
                 <li>
-                  <a href="/">Reservations</a>
+                  <a href="/booking">Reservations</a>
                 </li>
                 <li>
-                  <a href="/r">Online Order</a>
+                  <a href="#">Online Order</a>
                 </li>
                 <li>
-                  <a href="/">Login</a>
+                  <a href="#">Login</a>
                 </li>
               </ul>
             </div>
@@ -45,9 +45,9 @@ export default function Footer() {
             <div className='text-start'>
               <h5>Contact</h5>
               <ul className="list-unstyled">
-                <li><a href='/'>Address</a></li>
-                <li><a href='/'>Phone Number</a></li>
-                <li><a href='/'>Email</a></li>
+                <li><a href='#'>Address</a></li>
+                <li><a href='#'>Phone Number</a></li>
+                <li><a href='#'>Email</a></li>
               </ul>
             </div>
           </Col>
@@ -55,9 +55,9 @@ export default function Footer() {
             <div className='text-start'>
               <h5>Social Media Links</h5>
               <ul className="list-unstyled">
-                <li><a href='/'>Address</a></li>
-                <li><a href='/'>Phone Number</a></li>
-                <li><a href='/'>Email</a></li>
+                <li><a href='#'>Address</a></li>
+                <li><a href='#'>Phone Number</a></li>
+                <li><a href='#'>Email</a></li>
               </ul>
             </div>
           </Col>

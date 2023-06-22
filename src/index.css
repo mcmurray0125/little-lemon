@@ -242,7 +242,6 @@ header p,
 #booking {
   background-color: var(--slate-main) !important;
   height: auto;
-  width: 100dvw;
 }
 #booking h1 {
   color: var(--yellow-main);
@@ -276,6 +275,23 @@ header p,
 #booking button:active {
   background-color: var(--price-color);
 }
+
+/* BOOKING CONFIRMATION */
+#booking-confirm {
+  font-family: "Markiza Text";
+  min-height: 300px;
+  height: 50dvh;
+  background-color: var(--slate-main);
+}
+#booking-confirm .container {
+  color: var(--light-grey);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* FOOTER */
 footer li a {
   text-decoration: none;
