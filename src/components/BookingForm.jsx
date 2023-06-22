@@ -1,11 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 
-export default function BookingForm({ availableTimes }) {
+export default function BookingForm({ availableTimes, updateTimes, dispatchOnDateChange }) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('17:00');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('Birthday');
+
+  const handleDateChange = e => {
+    setDate(e.target.value);
+    dispatchOnDateChange(e.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +27,7 @@ export default function BookingForm({ availableTimes }) {
                     type="date"
                     id="res-date"
                     value={date}
-                    onChange={(e) => setDate(e.target.value)}
+                    onChange={handleDateChange}
                 />
 
                 <Form.Label htmlFor="res-time">Choose time</Form.Label>
