@@ -275,7 +275,9 @@ header p,
 #booking button:active {
   background-color: var(--price-color);
 }
-
+.res-error {
+  color: var(--yellow-main);
+}
 /* BOOKING CONFIRMATION */
 #booking-confirm {
   font-family: "Markiza Text";
